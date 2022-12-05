@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "lunchboxjs": "^0.2.1020",
+    "three": "^0.147.0",
     "vue": "^3.2.45"
   },
   "devDependencies": {

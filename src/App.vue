@@ -8,6 +8,8 @@ const active = ref(true);
 onBeforeRender(() => {
   if (active.value) {
     rotation.value.y += 0.02;
+  } else {
+    rotation.value.y -= 0.02;
   }
 })
 </script>
@@ -16,16 +18,17 @@ onBeforeRender(() => {
   <Lunchbox>
     <directionalLight />
     <pointLight />
-    <mesh position-z="-5" :rotation-y="rotation.y" @pointerEnter="active = !active">
+    <mesh ref="mesh" position-z="-5" :rotation-y="rotation.y" @click="active = !active">
       <sphereGeometry />
       <meshPhysicalMaterial>
-        <textureLoader src="../public/map-of-earth.avif" attach="map" />
-        <textureLoader src="../public/grayscale-map-of-earth.avif" attach="bumpMap" />
+        <textureLoader src="/map-of-earth.avif" attach="map" />
+        <textureLoader src="/grayscale-map-of-earth.avif" attach="bumpMap" />
       </meshPhysicalMaterial>
-
     </mesh>
   </Lunchbox>
 </template>
 <script>
 document.title = 'Good vibez';
+export default {
+}
 </script>
