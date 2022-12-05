@@ -3,9 +3,12 @@ import {ref} from 'vue'
 import {onBeforeRender} from 'lunchboxjs';
 
 const rotation = ref({y: 0});
+const active = ref(true);
 
 onBeforeRender(() => {
-  rotation.value.y += 0.02;
+  if (active.value) {
+    rotation.value.y += 0.02;
+  }
 })
 </script>
 
@@ -13,7 +16,7 @@ onBeforeRender(() => {
   <Lunchbox>
     <directionalLight />
     <pointLight />
-    <mesh @click="test()" position-z="-5" :rotation-y="rotation.y">
+    <mesh position-z="-5" :rotation-y="rotation.y" @pointerEnter="active = !active">
       <sphereGeometry />
       <meshPhysicalMaterial>
         <textureLoader src="../public/map-of-earth.avif" attach="map" />
