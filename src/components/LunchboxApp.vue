@@ -1,6 +1,3 @@
-<script setup>
-</script>
-
 <template>
   <lunchbox>
     <mesh @click="test()" position-z="-5">
@@ -9,6 +6,18 @@
     </mesh>
   </lunchbox>
 </template>
+
 <script>
-document.title = 'Good vibez';
+export default {
+  name: 'LunchboxApp',
+  methods: {
+    test() {
+      console.log('In')
+    }
+  }
+}
 </script>
+
+<style>
+
+</style>
