@@ -9,6 +9,9 @@
     "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
   },
   "dependencies": {
+    "stats.js": "^0.17.0",
+    "three": "^0.134.0",
+    "troisjs": "^0.3.4",
     "vue": "^3.2.45"
   },
   "devDependencies": {
