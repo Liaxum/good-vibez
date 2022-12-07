@@ -29,30 +29,9 @@
         >
       </div>
     </v-app-bar>
-    <v-parallax id="top" :height="parallaxHeight" src="/paralax.png">
-      <div class="d-flex flex-column fill-height justify-center align-center">
-        <img
-          src="/logo-rect.svg"
-          alt="logo"
-          style="width: 600px; margin: 20px"
-        />
-        <h4 style="font-size: 40px; font-weight: bold">
-          Ta dose de fraicheur, à toute heure !
-        </h4>
-        <h5 class="font-weight-medium" style="font-size: 24px">
-          Vibin, c’est une appli qui surfe sur les good vibes et qui
-          t’accompagne chaque jour pour être à l’écoute de toi-même.
-        </h5>
-        <v-btn
-          href="#Personnalisé"
-          rounded="pill"
-          color="#2EC4B6"
-          class="text-white"
-          style="margin-top: 50px"
-          >Je découvre Vibin</v-btn
-        >
-      </div>
-    </v-parallax>
+    <Vue3Lottie animationLink="https://assets2.lottiefiles.com/packages/lf20_JRoGQbX8uy.json" :height="animHeight" :width="animWidth">
+      <h1>Hey</h1>
+    </Vue3Lottie>
     <section
       id="Personnalisé"
       style="
@@ -161,8 +140,16 @@
         </v-col>
       </v-row>
     </section>
-    <section class="" style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
-      <h2 style="font-size: 48px; text-align: center; margin-bottom: 30px;">
+    <section
+      class=""
+      style="
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      "
+    >
+      <h2 style="font-size: 48px; text-align: center; margin-bottom: 30px">
         Vibrez au rythme de la positivité, <br />créez votre safe place.
       </h2>
       <div><img src="/apple.png" /><img src="/google.png" /></div>
@@ -170,10 +157,18 @@
   </v-container>
 </template>
 
-<script setup>
-document.title = "Vibin";
-
-const parallaxHeight = window.innerHeight;
+<script>
+import { Vue3Lottie } from "vue3-lottie";
+import "vue3-lottie/dist/style.css";
+export default {
+  data: () => ({
+    animHeight: window.innerHeight,
+    animWidth: window.innerWidth,
+  }),
+  components: {
+    Vue3Lottie
+  }
+}
 </script>
 <style>
 html {
