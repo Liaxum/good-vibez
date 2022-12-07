@@ -16,7 +16,7 @@ export default defineConfig({
     }),
   ],
   define: { 'process.env': {} },
-  base: process.env.NODE_ENV !== 'production' ? '/' : '/good-vibez-landing/',
+  base: process.env.NODE_ENV !== 'production' ? '/' : '/vibin/',
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
