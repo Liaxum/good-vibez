@@ -48,13 +48,13 @@
         style="position: absolute; right: -1200px; opacity: 0.5"
         renderer="canvas"
       />
-      <div>
+      <div style="margin-right: 500px">
         <img src="/vibin.png" alt="logo" style="margin: 10px" />
         <h1 style="margin: 10px; font-size: 36">
           L'application 100% good vibes
         </h1>
         <p style="margin: 10px; font-size: 20">
-          Vibrez au rythme de la positivité, créer votre safe place.
+          Vibrez au rythme des ondes positives. Créez votre safe place.
         </p>
         <v-btn
           class="text-white"
@@ -62,12 +62,13 @@
           variant="elevated"
           color="#2ec4b6"
           style="margin: 10px"
+          href="#Personnalisé"
           >Je décrouvre</v-btn
         >
       </div>
       <img
         src="/phone-0.png"
-        style="position: absolute; right: 0; width: 600px"
+        style="position: absolute; right: 0; width: 550px; top: 300px"
       />
     </section>
     <section
@@ -90,12 +91,14 @@
             Personnalisez
           </h2>
           <p>
-            Insufflez un vent de positivité dans votre journée en créant un
+            Diffusez des <b>ondes positives</b> dans votre journée en créant un
             profil qui vous ressemble. <br /><br />
-            Concevez l’application à votre image et faites-en une safe place :
-            Vibin vous aide à donner du sens à votre quotidien.
+            Concevez l’application à votre image et faites-en
+            <b>une safe place</b>. <br />
+            Vibin vous aide à isuffler un vent de positivité dans votre
+            quotidien. Choisissez ce qui vous motive et
+            <b>lancez-vous</b> !
           </p>
-          image.
         </v-col>
         <v-col cols="8" class="d-flex justify-center">
           <img src="/phone-1.png" style="margin-top: 250px" />
@@ -116,7 +119,9 @@
     >
       <v-row>
         <v-col cols="8" class="d-flex justify-center">
-          <img src="/phone-2.png" style="margin-top: 250px" />
+          <video height="705" width="326" style="margin-top: 250px; border-radius: 40px; border: 5px solid #CBF3F0;" autoplay muted loop>
+            <source src="/phone-2.mp4" type="video/mp4">
+          </video>
         </v-col>
         <v-col
           cols="4"
@@ -127,17 +132,15 @@
               color: #2ec4b6;
               font-size: 48px;
               margin-bottom: 20px;
-              display: flex;
-              justify-content: flex-end;
             "
           >
             Positivez
           </h2>
           <p>
             Chaque jour commence avec votre réflexe positivité. <br /><br />
-            Vibin aère votre esprit grâce à des objectifs personnalisés, des
-            actions bienveillantes qui vous ressemblent et un flux d’actus
-            positives qui donnent le sourire.
+            Vibin aère votre esprit grâce à des <b>objectifs personnalisés</b>,
+            des actions bienveillantes qui vous ressemblent et
+            <b>un flux d’actus positives</b> qui donnent le sourire.
           </p>
         </v-col>
       </v-row>
@@ -163,12 +166,11 @@
             Vibrez
           </h2>
           <p>
-            Insufflez un vent de positivité dans votre journée en créant un
-            profil qui vous ressemble. <br /><br />
-            Concevez l’application à votre image et faites-en une safe place :
-            Vibin vous aide à donner du sens à votre quotidien.
+            Pas de stress, pas de compétition : que des <b>good vibes</b> !
+            <br /><br />
+            Vibrez au rythme des ondes positives que vous avez initiées. Avancer
+            ce n’est pas toujours aller vite, c’est surtout <b>aller bien</b>.
           </p>
-          image.
         </v-col>
         <v-col cols="8" class="d-flex justify-end">
           <img
@@ -188,11 +190,13 @@
       "
     >
       <h2 style="font-size: 48px; text-align: center; margin-bottom: 30px">
-        Vibrez au rythme de la positivité, <br />créez votre safe place.
+        Diffusez vos ondes positives. <br /> Créez votre safe place.
       </h2>
       <div><img src="/apple.png" /><img src="/google.png" /></div>
     </section>
-    <v-footer> </v-footer>
+    <v-footer >
+      <img src="/logo-footer.png">
+    </v-footer>
   </v-container>
 </template>
 
