@@ -29,9 +29,47 @@
         >
       </div>
     </v-app-bar>
-    <Vue3Lottie animationLink="https://assets2.lottiefiles.com/packages/lf20_JRoGQbX8uy.json" :height="animHeight" :width="animWidth">
-      <h1>Hey</h1>
-    </Vue3Lottie>
+    <section
+      id="top"
+      style="
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      "
+    >
+      <Vue3Lottie
+        animationLink="https://assets7.lottiefiles.com/packages/lf20_N09fp5kZVe.json"
+        style="position: absolute; left: -1200px; opacity: 0.5"
+        renderer="canvas"
+      />
+      <Vue3Lottie
+        animationLink="https://assets6.lottiefiles.com/packages/lf20_S6LvWZvFl5.json"
+        style="position: absolute; right: -1200px; opacity: 0.5"
+        renderer="canvas"
+      />
+      <div>
+        <img src="/vibin.png" alt="logo" style="margin: 10px" />
+        <h1 style="margin: 10px; font-size: 36">
+          L'application 100% good vibes
+        </h1>
+        <p style="margin: 10px; font-size: 20">
+          Vibrez au rythme de la positivité, créer votre safe place.
+        </p>
+        <v-btn
+          class="text-white"
+          rounded="pill"
+          variant="elevated"
+          color="#2ec4b6"
+          style="margin: 10px"
+          >Je décrouvre</v-btn
+        >
+      </div>
+      <img
+        src="/phone-0.png"
+        style="position: absolute; right: 0; width: 600px"
+      />
+    </section>
     <section
       id="Personnalisé"
       style="
@@ -154,6 +192,7 @@
       </h2>
       <div><img src="/apple.png" /><img src="/google.png" /></div>
     </section>
+    <v-footer> </v-footer>
   </v-container>
 </template>
 
@@ -166,9 +205,9 @@ export default {
     animWidth: window.innerWidth,
   }),
   components: {
-    Vue3Lottie
-  }
-}
+    Vue3Lottie,
+  },
+};
 </script>
 <style>
 html {
