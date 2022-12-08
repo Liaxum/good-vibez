@@ -68,7 +68,7 @@
       </div>
       <img
         src="/phone-0.png"
-        style="position: absolute; right: 0; width: 550px; top: 300px"
+        style="position: absolute; right: 0; width: 550px;"
       />
     </section>
     <section
@@ -101,7 +101,9 @@
           </p>
         </v-col>
         <v-col cols="8" class="d-flex justify-center">
-          <img src="/phone-1.png" style="margin-top: 250px" />
+          <video height="605" width="226" style="margin-top: 250px; border-radius: 40px; border: 5px solid #CBF3F0;" autoplay muted loop>
+            <source src="/phone-1.mp4" type="video/mp4">
+          </video>
         </v-col>
       </v-row>
     </section>
@@ -119,7 +121,7 @@
     >
       <v-row>
         <v-col cols="8" class="d-flex justify-center">
-          <video height="705" width="326" style="margin-top: 250px; border-radius: 40px; border: 5px solid #CBF3F0;" autoplay muted loop>
+          <video height="605" width="226" style="margin-top: 250px; border-radius: 40px; border: 5px solid #CBF3F0;" autoplay muted loop>
             <source src="/phone-2.mp4" type="video/mp4">
           </video>
         </v-col>
@@ -172,11 +174,10 @@
             ce n’est pas toujours aller vite, c’est surtout <b>aller bien</b>.
           </p>
         </v-col>
-        <v-col cols="8" class="d-flex justify-end">
-          <img
-            src="/phone-3.png"
-            style="width: 776; height: 1068; margin-top: 300px"
-          />
+        <v-col cols="8" class="d-flex justify-center">
+          <video height="605" width="226" style="margin-top: 250px; border-radius: 40px; border: 5px solid #CBF3F0;" autoplay muted loop>
+            <source src="/phone-3.mp4" type="video/mp4">
+          </video>
         </v-col>
       </v-row>
     </section>
@@ -197,6 +198,7 @@
     <v-footer >
       <img src="/logo-footer.png">
     </v-footer>
+    <v-btn href="#top" ></v-btn>
   </v-container>
 </template>
 
@@ -212,7 +214,7 @@ export default {
     Vue3Lottie,
   },
 };
-</script>
+</script> 
 <style>
 html {
   scroll-behavior: smooth;
