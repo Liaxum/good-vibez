@@ -101,7 +101,7 @@
           </p>
         </v-col>
         <v-col cols="8" class="d-flex justify-center">
-          <video height="605" width="226" style="margin-top: 250px; border-radius: 40px; border: 5px solid #CBF3F0;" autoplay muted loop>
+          <video height="634" width="293" style="margin-top: 50px; border-radius: 40px; border: 5px solid #CBF3F0;" autoplay muted loop>
             <source src="/phone-1.mp4" type="video/mp4">
           </video>
         </v-col>
@@ -121,7 +121,7 @@
     >
       <v-row>
         <v-col cols="8" class="d-flex justify-center">
-          <video height="605" width="226" style="margin-top: 250px; border-radius: 40px; border: 5px solid #CBF3F0;" autoplay muted loop>
+          <video height="634" width="293" style="margin-top: 50px; border-radius: 40px; border: 5px solid #CBF3F0;" autoplay muted loop>
             <source src="/phone-2.mp4" type="video/mp4">
           </video>
         </v-col>
@@ -175,7 +175,7 @@
           </p>
         </v-col>
         <v-col cols="8" class="d-flex justify-center">
-          <video height="605" width="226" style="margin-top: 250px; border-radius: 40px; border: 5px solid #CBF3F0;" autoplay muted loop>
+          <video height="634" width="293" style="margin-top: 50px; border-radius: 40px; border: 5px solid #CBF3F0;" autoplay muted loop>
             <source src="/phone-3.mp4" type="video/mp4">
           </video>
         </v-col>
