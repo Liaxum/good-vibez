@@ -68,12 +68,13 @@
       </div>
       <img
         src="/phone-0.png"
-        style="position: absolute; right: 0; width: 550px;"
+        style="position: absolute; right: 0; width: 550px"
       />
     </section>
     <section
       id="Personnalisé"
       style="
+        position: relative;
         height: 100vh;
         display: flex;
         justify-content: center;
@@ -101,8 +102,19 @@
           </p>
         </v-col>
         <v-col cols="8" class="d-flex justify-center">
-          <video height="634" width="293" style="margin-top: 50px; border-radius: 40px; border: 5px solid #CBF3F0;" autoplay muted loop>
-            <source src="/phone-1.mp4" type="video/mp4">
+          <video
+            height="634"
+            width="293"
+            style="
+              margin-top: 50px;
+              border-radius: 40px;
+              border: 5px solid #cbf3f0;
+            "
+            autoplay
+            muted
+            loop
+          >
+            <source src="/phone-1.mp4" type="video/mp4" />
           </video>
         </v-col>
       </v-row>
@@ -121,21 +133,26 @@
     >
       <v-row>
         <v-col cols="8" class="d-flex justify-center">
-          <video height="634" width="293" style="margin-top: 50px; border-radius: 40px; border: 5px solid #CBF3F0;" autoplay muted loop>
-            <source src="/phone-2.mp4" type="video/mp4">
+          <video
+            height="634"
+            width="293"
+            style="
+              margin-top: 50px;
+              border-radius: 40px;
+              border: 5px solid #cbf3f0;
+            "
+            autoplay
+            muted
+            loop
+          >
+            <source src="/phone-2.mp4" type="video/mp4" />
           </video>
         </v-col>
         <v-col
           cols="4"
           style="display: flex; flex-direction: column; justify-content: center"
         >
-          <h2
-            style="
-              color: #2ec4b6;
-              font-size: 48px;
-              margin-bottom: 20px;
-            "
-          >
+          <h2 style="color: #2ec4b6; font-size: 48px; margin-bottom: 20px">
             Positivez
           </h2>
           <p>
@@ -175,8 +192,19 @@
           </p>
         </v-col>
         <v-col cols="8" class="d-flex justify-center">
-          <video height="634" width="293" style="margin-top: 50px; border-radius: 40px; border: 5px solid #CBF3F0;" autoplay muted loop>
-            <source src="/phone-3.mp4" type="video/mp4">
+          <video
+            height="634"
+            width="293"
+            style="
+              margin-top: 50px;
+              border-radius: 40px;
+              border: 5px solid #cbf3f0;
+            "
+            autoplay
+            muted
+            loop
+          >
+            <source src="/phone-3.mp4" type="video/mp4" />
           </video>
         </v-col>
       </v-row>
@@ -191,14 +219,41 @@
       "
     >
       <h2 style="font-size: 48px; text-align: center; margin-bottom: 30px">
-        Diffusez vos ondes positives. <br /> Créez votre safe place.
+        Diffusez vos ondes positives. <br />
+        Créez votre safe place.
       </h2>
       <div><img src="/apple.png" /><img src="/google.png" /></div>
+      
     </section>
-    <v-footer >
-      <img src="/logo-footer.png">
+    <v-footer
+      class="text-white"
+      color="#2ec4b6"
+      style="
+        border-top: 20px solid #cbf3f0;
+        border-top-left-radius: 50px 50px;
+        border-top-right-radius: 50px 50px;
+        margin-top: 50px;
+      "
+    >
+      <div style="width: 100%; margin: 20px;">
+        <img src="/logo-footer.png" />
+        <div class="d-flex justify-space-between" style="width: 15%">
+          <v-icon>mdi-facebook</v-icon>
+          <v-icon>mdi-instagram</v-icon>
+          <v-icon>mdi-twitter</v-icon>
+          <v-icon>mdi-github</v-icon>
+        </div>
+        <v-divider color="white" style="margin: 20px; margin-left: 0;"/>
+      </div>
+      
     </v-footer>
-    <v-btn href="#top" ></v-btn>
+    <v-btn
+      href="#top"
+      color="#FF9F1C"
+      class="text-white"
+      icon="mdi-chevron-up"
+      style="position: fixed; top: 90%; right: 5%; opacity: 0.8"
+    />
   </v-container>
 </template>
 
